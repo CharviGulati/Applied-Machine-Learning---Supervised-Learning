@@ -7,7 +7,7 @@ The purpose of the assignment was to look at the Credit Card Clients Dataset  to
 
 So the 80-20 split means that one set contained 80% of the original dataset, the other 20%. The 80% set was used to train the machine learning models and the 20% set was used to test the model. The original dataset contained various pieces of information such as sex, education, marriage, various bill amounts, various pay amounts and more. A reference picture has been provided below. 
 
-<img width="1000" alt="image" src="https://user-images.githubusercontent.com/73089638/162645647-81cc62a7-3acc-4f9c-aab5-3682b245d7da.png">
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/73089638/162645760-b256d747-e699-4c3e-9d9b-b06bcf9d4443.png">
 
 We performed some initial exploratory data analysis to observe that credit card default rates were highest in university graduates.
 
