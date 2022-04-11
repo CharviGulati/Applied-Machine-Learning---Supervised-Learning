@@ -7,11 +7,11 @@ The purpose of the assignment was to look at the Credit Card Clients Dataset  to
 
 So the 80-20 split means that one set contained 80% of the original dataset, the other 20%. The 80% set was used to train the machine learning models and the 20% set was used to test the model. The original dataset contained various pieces of information such as sex, education, marriage, various bill amounts, various pay amounts and more. A reference picture has been provided below. 
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/73089638/162645647-81cc62a7-3acc-4f9c-aab5-3682b245d7da.png">
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/73089638/162645647-81cc62a7-3acc-4f9c-aab5-3682b245d7da.png">
 
 We performed some initial exploratory data analysis to observe that credit card default rates were highest in university graduates.
 
-<img width="248" alt="image" src="https://user-images.githubusercontent.com/73089638/162645723-06ce2374-fd13-4ce0-92cf-c01aff5ff808.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/73089638/162645723-06ce2374-fd13-4ce0-92cf-c01aff5ff808.png">
 
 
 Afterwards, we proceeded to clean up the original dataset. By this we mean to adjust the data by dropping our irrelevant information and differentiating between numerical, ordinal, and categorical features. By doing so, we can design a better, more robust model. We also create a dummy model that using basic inference techniques for its predictions. We call this a baseline model; this is the model on which we can base our model’s accuracy on. If our developed and learned model has lower accuracy that the baseline model then there’s something wrong with our learning process, otherwise the learned model has the potential to be effective. 
