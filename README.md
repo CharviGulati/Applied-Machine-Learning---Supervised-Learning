@@ -18,7 +18,7 @@ Afterwards, we proceeded to clean up the original dataset. By this we mean to ad
 
 We initially used a linear model to for predictive analysis. Linear models predict target values for a given continuous range. We used a very common approach to this by using the Linear Regression Model. It is however, common to try different models on your sample data to find the best fit so we tried various other models. The table below shows the different models we attempted to work with including all scores necessary. The most important (not always) measurnment to look out for is the recall score and according to the table below Linear Regression and Light GBM are the best models for this data. 
 
-<img width="700" alt="image" src="https://user-images.githubusercontent.com/73089638/162869387-25427eef-f08e-4adc-91f0-309c2423ba67.png">
+<img width="1000" alt="image" src="https://user-images.githubusercontent.com/73089638/162869387-25427eef-f08e-4adc-91f0-309c2423ba67.png">
 
 
 Now these results can be misleading since we did not consider certain things like category importance. The categories (column headers) in machine learning  are called features. Should the EDECATION and MARRIAGE features be considered equally important in this data? Will this cause any biases? 
