@@ -16,5 +16,15 @@ We performed some initial exploratory data analysis to observe that credit card 
 
 Afterwards, we proceeded to clean up the original dataset. By this we mean to adjust the data by dropping our irrelevant information and differentiating between numerical, ordinal, and categorical features. By doing so, we can design a better, more robust model. We also create a dummy model that using basic inference techniques for its predictions. We call this a baseline model; this is the model on which we can base our model’s accuracy on. If our developed and learned model has lower accuracy that the baseline model then there’s something wrong with our learning process, otherwise the learned model has the potential to be effective. 
 
-We initially used a Linear Regression Model with hyperparameter tuning on the sample data. Linear regression models are a common type of model for predictive analysis in supervised machine learning. It is used to predict target values for a given continuous range. With our trained Linear Regression model, we obtained a recall score of 64% and a precision score of 37.5%. A recall score is based on the number of positive predictions made by the model out of al the positive samples in the dataset. A precision score is based on the number of positive predictions made by the model that are actually declared as positive. 
+We initially used a linear model to for predictive analysis. Linear models predict target values for a given continuous range. We used a very common approach to this by using the Linear Regression Model. It is however, common to try different models on your sample data to find the best fit so we tried various other models. The table below shows the different models we attempted to work with including all scores necessary. The most important (not always) measurnment to look out for is the recall score and according to the table below Linear Regression and Light GBM are the best models for this data. 
+
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/73089638/162869387-25427eef-f08e-4adc-91f0-309c2423ba67.png">
+
+
+Now these results can be misleading since we did not consider certain things like category importance. The categories (column headers) in machine learning  are called features. Should the EDECATION and MARRIAGE features be considered equally important in this data? Will this cause any biases? 
+
+We took a look at feature importance and came to the conclusion that PAY_1 was the top  feature for LightGBM whereas it was no.2 for Linear Regression. This just shows that different models take different things into account and you need to use your data properly without any biases.  
+
+After a few other tests, we ended up choosing LightGBM as the model of our choice because of its high recall score compared to the others. We came to this conclusion by ignoring all biases and by not training our model more than once on the data set which his avoids overfitting (where the model leanrns too many specificities of the training set such that it cannot be applied to any training or real life data set without giving bad/biases results). 
+
 
